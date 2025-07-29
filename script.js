@@ -19,7 +19,7 @@ button.addEventListener("click",() => {
 
     clear_grid();
     create_grid(grid_length);
-})
+});
 
 document.querySelector(".wrapper").insertBefore(button, grid_container);
 
@@ -32,6 +32,9 @@ function create_grid(length) {
         for (let j=0; j<length; j++) {
             const grid_square = document.createElement("div");// create square
             grid_square.classList.add("grid_square"); // add class to square
+            grid_square.addEventListener("mouseenter", () =>{
+                grid_square.style.backgroundColor = "#ff0000";
+            });
             grid_row.appendChild(grid_square);// append square to row
         }
         grid_container.appendChild(grid_row); // append row to container

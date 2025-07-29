@@ -37,10 +37,6 @@ body {
     transition: background-color 0.3 ease;
 }
 
-.grid_square:hover {
-    background-color: red
-}
-
 .button {
     width: 200px;
     height: 48px;
