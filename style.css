@@ -1,0 +1,42 @@
+body {
+    background-color: #FFF;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+}
+
+.grid_container {
+    margin-top: 20px;
+    width: 80%;
+    aspect-ratio: 1/1; /* always a square */
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start; /* 防止子元素拉伸 */
+    padding: 10px;
+}
+
+.grid_row {
+    width: 100%;
+    display: flex;
+    align-items: flex-start; /* 防止子元素拉伸 */
+    gap: 10px;
+    background-color:cadetblue
+}
+
+.grid_square {
+    background-color: pink;
+    width:100%;
+    aspect-ratio: 1/1; /* always a square */
+    transition: background-color 0.3 ease;
+}
+
+.grid_square:hover {
+    background-color: red
+}
